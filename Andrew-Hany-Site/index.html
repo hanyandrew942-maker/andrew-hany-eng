@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Professional - Eng Andrew Hany</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Professional</h2>
+                <span>Eng Andrew Hany</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#projects">أعمالي</a></li>
+                <li><a href="#contact">اتصل بي</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">مرحباً، أنا أندرو هاني</h1>
+            <p class="hero-subtitle">مبرمج مواقع احترافي - أصمم مواقع مبتكرة بتقنيات 3D متطورة</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('projects')">أعمالي</button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">اتصل بي</button>
+            </div>
+        </div>
+        <div class="hero-3d">
+            <div class="cube">
+                <div class="cube-text">The Professional</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services">
+        <h2 class="section-title">خدماتي</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-store"></i>
+                <h3>مواقع المحلات والمطاعم</h3>
+                <p>تصميم مواقع جذابة لتسويق محلك أو مطعمك بأحدث تقنيات 3D</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>منصات تعليمية</h3>
+                <p>منصات متكاملة للمدرسين والتدريس الإلكتروني بتصميم تفاعلي</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>صيانة وتحديث</h3>
+                <p>خدمات صيانة دورية وتحديث للمواقع الحالية مع دعم فني متكامل</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>مواقع شخصية</h3>
+                <p>مواقع احترافية للمدرسين والفنانين بتصميم يعبر عن شخصيتك</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأعمال -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">أعمالي</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>مواقع المطاعم</h3>
+                <p>تصميم مواقع تفاعلية للمطاعم والكافيهات مع قوائم رقمية</p>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>منصات تعليمية</h3>
+                <p>منصات متكاملة للتعليم الإلكتروني مع فصول افتراضية</p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>مواقع تجارية</h3>
+                <p>مواقع تسويقية للمحلات والأعمال مع أنظمة حجز متقدمة</p>
+                <div class="project-tech">
+                    <span>WordPress</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>مواقع شخصية</h3>
+                <p>مواقع احترافية تعرض السيرة الذاتية والإنجازات</p>
+                <div class="project-tech">
+                    <span>Vue.js</span>
+                    <span>Firebase</span>
+                    <span>API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">اتصل بي</h2>
+        <div class="contact-info">
+            <div class="contact-item" onclick="contactViaWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                <span>+201220061233</span>
+            </div>
+            <div class="contact-item" onclick="contactViaEmail()">
+                <i class="fas fa-envelope"></i>
+                <span>engandrewhany@gmail.com</span>
+            </div>
+        </div>
+        <div class="social-links">
+            <p>تابعني على وسائل التواصل الاجتماعي</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <p>جميع الحقوق محفوظة &copy; 2024 - The Professional - Eng Andrew Hany</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
